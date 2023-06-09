@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input"type="text"><button id="btn">next</button>
+    <p id="para"></p>
+    <script type="text/javascript">
+     var c = document.getElementById("input")
+     var a = document.getElementById("btn")
+     var r = document.getElementById("para")
+     var bore = false
+     a.onclick = () => {
+         if (c.value == 0){
+            r.innerHTML = "please!! input something"
+            r.style.color ="red"
+           
+         } else{
+                alert("welcome")
+                alert(Math.floor(Math.random()*3))
+            }
+     }
+     c.onclick = () => { 
+     r.innerHTML = ""}
+       console.log()
+    </script>
+</body>
+</html>
